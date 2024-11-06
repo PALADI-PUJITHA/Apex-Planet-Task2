@@ -1,0 +1,129 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Image Gallery */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.gallery-container img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Contact Form */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+}
+
+/* To-Do List */
+.todo-list input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.todo-list button {
+    width: 15%;
+    padding: 10px;
+}
+
+/* Popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.popup p {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+.image-gallery1 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.image-gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#gallery1{
+    display: flex;  /* Flexbox to arrange items in a row */
+    justify-content: space-between;  /* Space out the images */
+    overflow-x: auto; /* Horizontal scrolling if images overflow */
+    gap: 20px; /* Gap between images */
+    padding-bottom: 20px;
+}
+
+#gallery1 img {
+    width: 250px;  /* Width of each image */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

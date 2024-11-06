@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araku Trip</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the Araku Trip</h1>
+    </header>
+
+    <section class="image-gallery">
+        <h2>Image Gallery</h2>
+        <div id="gallery" class="gallery-container">
+            <!-- Dynamic images will be inserted here -->
+        </div>
+        <input type="file" id="image-upload" accept="image/*" onchange="addImage()">
+        <button onclick="removeImage()">Remove Last Image</button>
+    </section>
+
+    <!-- Scenic Valley Views -->
+    <div id="gallery1" class="gallery-container1">
+<img src="https://tse4.mm.bing.net/th?id=OIP.b9MNzhh3Do_co5-HDdgBGwHaE3&pid=Api&P=0&h=180" alt="Breathtaking views of Araku Valley">
+
+<!-- Coffee Plantation -->
+<img src="https://tse4.mm.bing.net/th?id=OIP.ksFLmGuz0tGTE6BTXFm_vAHaFj&pid=Api&P=0&h=180" alt="Coffee plantation in Araku Valley" >
+
+<!-- Waterfalls -->
+<img src="https://tse4.mm.bing.net/th?id=OIP.pyfkPPFQJlaTR_5LQrdw4gHaE6&pid=Api&P=0&h=180" alt="Beautiful waterfall in Araku Valley">
+
+<!-- Tribal Culture -->
+<img src="https://tse3.mm.bing.net/th?id=OIP.pz_HNeDQMfxzcqvXL5fbAQHaEK&pid=Api&P=0&h=180" alt="Tribal woman from Araku Valley" >
+
+<!-- Borra Caves -->
+<img src="https://tse2.mm.bing.net/th?id=OIP.5Ncge6RZD8VSVFhS0jU58wAAAA&pid=Api&P=0&h=180" alt="Borra Caves, Araku">
+</div>
+
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" required></textarea>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section class="todo-list">
+        <h2>To-Do List</h2>
+        <input type="text" id="todo-input" placeholder="Add a task">
+        <button onclick="addToDo()">Add Task</button>
+        <ul id="todo-list">
+            <!-- Dynamic to-do items will be inserted here -->
+        </ul>
+    </section>
+    
+
+    <div id="popup" class="popup">
+        <p>Your form has been submitted successfully!</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Araku Trip</p>
+    </footer>
+
+    <script src="button.js"></script>
+</body>
+</html>
